@@ -53,7 +53,7 @@ module.exports = {
 
     update: (req, res) => {
         if (!req.params.cardId) {
-            res.status(420).send('You must provide an card Id');
+            res.status(420).send('You must provide a card Id');
             return;
         }
 
