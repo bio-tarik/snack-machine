@@ -39,6 +39,9 @@ app.post('/card/insert', (req, res) => {
     })
 })
 
+//Routes
+require('./routes/routes')(app, client);
+
 app.listen(port, () => {
     console.log('Server start on port ' + port);
 })

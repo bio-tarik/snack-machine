@@ -1,7 +1,7 @@
 const crypto = require('crypto');
 
 module.exports = (client) => {
-    client.hget("config", "status", (err, obj) => {
+    client.hget("config", "statusOK", (err, obj) => {
         if(!obj){
             client.hmset('config', ['statusOK', "OK"]);
 
